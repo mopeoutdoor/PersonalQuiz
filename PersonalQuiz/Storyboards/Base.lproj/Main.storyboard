@@ -326,7 +326,6 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="navigationBar" destination="ZGa-Kg-RqR" id="Ef8-yf-q07"/>
                         <outlet property="resultMessageTextField" destination="kbG-Va-ffl" id="rvI-WZ-HxT"/>
                         <outlet property="resultPictureTextField" destination="9RI-Rt-PYo" id="jkd-Xg-t7b"/>
                     </connections>

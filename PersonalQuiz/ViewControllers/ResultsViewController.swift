@@ -17,11 +17,12 @@ class ResultsViewController: UIViewController, UINavigationControllerDelegate {
     
     @IBOutlet weak var resultPictureTextField: UILabel!
     @IBOutlet weak var resultMessageTextField: UILabel!
-    @IBOutlet weak var navigationBar: UINavigationItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         self.navigationItem.setHidesBackButton(true, animated: false)
+        
         calcResults()
     }
     
@@ -41,17 +42,6 @@ class ResultsViewController: UIViewController, UINavigationControllerDelegate {
         resultPictureTextField.text = String(winnerType!.rawValue)
         resultMessageTextField.text = winnerType?.difinition
     }
-    
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
     
     deinit {
         print("ResultsViewController was been dealocated")
